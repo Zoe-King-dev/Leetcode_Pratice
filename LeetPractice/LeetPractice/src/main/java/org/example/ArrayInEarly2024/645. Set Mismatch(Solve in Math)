@@ -1,0 +1,22 @@
+class Solution {
+    public int[] findErrorNums(int[] nums) {
+        int rep = 0, loss = 0;
+        int n = nums.length;
+        int shouldBeSum = n * (n + 1) / 2;
+        int realSum = 0;
+        int noReptSum = 0;
+        int[] hushList = new int[n + 1];
+        for (Integer i:nums){
+            realSum += i;
+            hushList[i] ++;
+            if (hushList[i] == 1) noReptSum += i;
+        }
+        loss = shouldBeSum - noReptSum;
+        rep = realSum - noReptSum;
+        int[] array = new int[2];
+        array[0] = rep;
+        array[1] = loss;
+        return array;
+    }
+}
+

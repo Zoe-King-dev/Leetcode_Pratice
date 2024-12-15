@@ -1,0 +1,6 @@
+        Set<Integer> set = new HashSet<>();
+        for (Integer i:nums) set.add(i);
+        List<Integer> list = new ArrayList<>(set);
+        Collections.sort(list);
+        int l = list.size();
+        return l>3? list.get(l - 3) : list.get(l - 1);
