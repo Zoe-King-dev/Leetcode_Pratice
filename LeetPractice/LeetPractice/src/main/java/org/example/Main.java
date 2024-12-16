@@ -36,15 +36,23 @@ public class Main {
 
         J86 j86 = new J86();
         J86_repratice1 j86Repratice1 = new J86_repratice1();
-        ListNode head = new ListNode(1);
+        /*ListNode head = new ListNode(1);
         head.next = new ListNode(4);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(2);
         head.next.next.next.next = new ListNode(2);
         head.next.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next.next = new ListNode(2);
-        ListNode result = j86Repratice1.partition(head, 3);
+        ListNode result = j86Repratice1.partition(head, 3);*/
 
+        J142 j142 = new J142();
+        // [3,2,0,-4]
+        ListNode head = new ListNode(3);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(0);
+        head.next.next.next = new ListNode(-4);
+        head.next.next.next.next = head.next;
+        ListNode result = j142.detectCycle(head);
 
     }
 }
