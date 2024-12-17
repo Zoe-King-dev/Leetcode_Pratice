@@ -47,12 +47,27 @@ public class Main {
 
         J142 j142 = new J142();
         // [3,2,0,-4]
-        ListNode head = new ListNode(3);
+/*        ListNode head = new ListNode(3);
         head.next = new ListNode(2);
         head.next.next = new ListNode(0);
         head.next.next.next = new ListNode(-4);
         head.next.next.next.next = head.next;
-        ListNode result = j142.detectCycle(head);
+        ListNode result = j142.detectCycle(head);*/
+
+        J19 j19 = new J19();
+        /*ListNode head = new ListNode(1);
+        ListNode result = j19.removeNthFromEnd(head, 1);*/
+
+        J876 j876 = new J876();
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        head.next.next.next.next.next = new ListNode(6);
+        //head.next.next.next.next.next.next = new ListNode(2);
+        System.out.println(j876.middleNode(head));
+
 
     }
 }

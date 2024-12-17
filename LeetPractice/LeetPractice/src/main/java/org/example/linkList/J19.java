@@ -6,11 +6,22 @@ package org.example.linkList;
  **/
 public class J19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode p1 = head;
-        ListNode p2 = head;
-        for(int i=1; i == n; i++){
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode x = findNthFromEnd(dummy, n + 1);
+        x.next = x.next.next;
+        return dummy.next;
+    }
 
+    public ListNode findNthFromEnd(ListNode head, int n){
+        ListNode p1 = head, p2 = head;
+        for(int i = 0; i < n; i ++){
+            p1 = p1.next;
         }
-        return null;
+        while(p1 != null){
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+        return p2;
     }
 }
