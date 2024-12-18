@@ -1,4 +1,6 @@
-package org.example.linkList;
+package org.example.linkedlist.double_points_skill;
+
+import org.example.linkedlist.ListNode;
 
 /**
  * @Author Haoran_Yang

@@ -1,4 +1,4 @@
-package org.example.linkList;
+package org.example.linkedlist.double_points_skill;
 
 /**
  * @Author Haoran_Yang

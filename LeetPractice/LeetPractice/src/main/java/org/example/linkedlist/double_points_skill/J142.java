@@ -1,4 +1,6 @@
-package org.example.linkList;
+package org.example.linkedlist.double_points_skill;
+
+import org.example.linkedlist.ListNode;
 
 public class J142 {
     public ListNode detectCycle(ListNode head) {

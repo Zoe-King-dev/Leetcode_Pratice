@@ -1,5 +1,4 @@
-package org.example;
-
+package org.example.linkedlist;
 import org.example.linkedlist.double_points_skill.*;
 
 /**
@@ -60,14 +59,14 @@ public class Main {
         ListNode result = j19.removeNthFromEnd(head, 1);*/
 
         J876 j876 = new J876();
-        /*ListNode head = new ListNode(1);
+        ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
         //head.next.next.next.next.next.next = new ListNode(2);
-        System.out.println(j876.middleNode(head));*/
+        System.out.println(j876.middleNode(head));
 
 
     }
