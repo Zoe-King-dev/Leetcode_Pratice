@@ -10,19 +10,33 @@ public class J23 {
     public ListNode mergeKLists(ListNode[] lists) {
 
         //Consider null situation
-        if(lists==null) return null;
+        if(lists == null || lists.length == 0) return null;
 
         //create dummy node
         ListNode dummy = new ListNode(-1);
         ListNode p = dummy;
 
         //create PriorityQueue
-        PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, (a, b)->(a.val - b.val));
-
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, (ListNode a, ListNode b) -> (a.val - b.val));
 
         //insert nodes into PriorityQueue
+        for(ListNode n : lists){
+            if(n != null){
+                pq.add(n);
+            }
+        }
 
+        //poll nodes from PriorityQueue to dummy LinkList
+        while(!pq.isEmpty()){
+            ListNode temp = pq.poll();
+            p.next = temp;
+            // **IMP**: Remember to confirm the node is not null when you add
+            if(temp.next != null) {
+                pq.add(temp.next);
+            }
+            p = p.next;
+        }
 
-        return null;
+        return dummy.next;
     }
 }
