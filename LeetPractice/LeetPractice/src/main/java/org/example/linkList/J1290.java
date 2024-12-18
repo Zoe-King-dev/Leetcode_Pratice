@@ -6,11 +6,13 @@ package org.example.linkList;
  **/
 public class J1290 {
     public int getDecimalValue(ListNode head) {
+        // Convert binary number in linked list to decimal
         int result = 0;
-        while(head != null){
+        while (head != null) {
             result = result * 2 + head.val;
             head = head.next;
         }
         return result;
     }
 }
+

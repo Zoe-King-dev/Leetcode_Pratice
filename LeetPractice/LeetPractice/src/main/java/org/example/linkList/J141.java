@@ -6,21 +6,21 @@ package org.example.linkList;
  **/
 public class J141 {
     public boolean hasCycle(ListNode head) {
-        ListNode slow, fast;
+        // Check if the list is empty or has only one node
+        if (head == null || head.next == null) return false;
 
-        if (head == null || head.next == null)
-            return false;
+        // Initialize slow and fast pointers
+        ListNode slow = head, fast = head.next;
 
-        slow = head;
-        fast = head.next;
-
-        while(slow != fast){
-            if(fast.next == null || fast.next.next == null)
-                return false;
+        // Traverse the list with two pointers
+        while (slow != fast) {
+            if (fast.next == null || fast.next.next == null) return false;
             slow = slow.next;
             fast = fast.next.next;
         }
-        return true;
 
+        // Return true if a cycle is detected
+        return true;
     }
 }
+
