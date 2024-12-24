@@ -17,6 +17,7 @@ public class J206 {
 
         // Iteration
         while (cur != null){
+        //*** the pointer reverse completed in next iteration
             cur.next = pre;
             pre = cur;
             cur = nxt;
