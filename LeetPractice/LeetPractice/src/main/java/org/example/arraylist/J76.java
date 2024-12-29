@@ -8,6 +8,7 @@ import java.util.Map;
  * @Date 2024 12 29 18 20
  **/
 public class J76 {
+
     public String minWindow(String s, String t) {
         // Choose map as data structure
         Map<Character, Integer> window = new HashMap<>();
