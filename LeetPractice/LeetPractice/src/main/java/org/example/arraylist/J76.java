@@ -31,7 +31,7 @@ public class J76 {
                 }
             }
 
-            //Code below Only execute when window contains enough char
+            // Code below Only execute when window contains enough char
             while(valid == need.size()){
                 // update window's length
                 if(right - left < windowLen){
