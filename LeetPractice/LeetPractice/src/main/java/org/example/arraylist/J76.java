@@ -9,6 +9,7 @@ import java.util.Map;
  **/
 public class J76 {
     public String minWindow(String s, String t) {
+        // Choose map as data structure
         Map<Character, Integer> window = new HashMap<>();
         Map<Character, Integer> need = new HashMap<>();
         char[] tArray = t.toCharArray();
