@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.arraylist.J5;
+import org.example.arraylist.J76;
 
 /**
  * @Author Haoran_Yang
@@ -19,9 +19,14 @@ public class Main {
         int[] nums2 = {3,2,2,3};
         System.out.println(j27.removeElement(nums, 0));*/
 
-        J5 j5 = new J5();
+        /*J5 j5 = new J5();
         String s = "babad";
-        System.out.println(j5.longestPalindrome(s));
+        System.out.println(j5.longestPalindrome(s));*/
+
+        J76 j76 = new J76();
+        String s = "ADOBECODEBANC", t = "ABC";
+        //String s = "a", t = "aa";
+        System.out.println(j76.minWindow(s, t));
 
     }
 }
