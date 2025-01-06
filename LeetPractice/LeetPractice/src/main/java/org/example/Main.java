@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.arraylist.J76;
+import org.example.arraylist.J567;
 
 /**
  * @Author Haoran_Yang
@@ -23,10 +23,16 @@ public class Main {
         String s = "babad";
         System.out.println(j5.longestPalindrome(s));*/
 
-        J76 j76 = new J76();
+        /*J76 j76 = new J76();
         String s = "ADOBECODEBANC", t = "ABC";
         //String s = "a", t = "aa";
-        System.out.println(j76.minWindow(s, t));
+        System.out.println(j76.minWindow(s, t));*/
+
+        J567 j567 = new J567();
+        boolean b = j567.checkInclusion("ab", "eidboaoo");
+        //boolean b = j567.checkInclusion("ab", "eidbaooo");
+        //boolean b = j567.checkInclusion("abc", "ccccbbbbaaaa");
+        System.out.println(b);
 
     }
 }
